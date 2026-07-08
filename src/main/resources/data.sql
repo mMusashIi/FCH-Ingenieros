@@ -1,8 +1,8 @@
 -- 1. Insertar Usuario
--- Contraseña: "password"
--- Generada con BCrypt: $2a$10$wY.uV5Vf4E4Z9U3mU.4YWe6V0mD0wR1XGgL0sT.Jj3Lw3e5h1p6z2
+-- Contraseña en texto plano: "password"
+-- Hash BCrypt verificado para "password":
 INSERT INTO Usuarios (nombre_completo, rol, username, password_hash, estado)
-VALUES ('Usuario Demo', 'Gerente', 'demo', '$2a$10$wY.uV5Vf4E4Z9U3mU.4YWe6V0mD0wR1XGgL0sT.Jj3Lw3e5h1p6z2', true)
+VALUES ('Usuario Demo', 'Gerente', 'demo', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', true)
 ON CONFLICT (username) DO NOTHING;
 
 -- 2. Insertar Material

@@ -18,9 +18,9 @@ import java.util.Map;
  *
  * Endpoints:
  * ┌─────────────────────────────┬──────────┬──────────────────────────────────────┐
- * │ Endpoint                    │ Método   │ Descripción                          │
+ * │ Endpoint │ Método │ Descripción │
  * ├─────────────────────────────┼──────────┼──────────────────────────────────────┤
- * │ /api/auth/login             │ POST     │ Autenticar usuario, devolver JWT     │
+ * │ /api/auth/login │ POST │ Autenticar usuario, devolver JWT │
  * └─────────────────────────────┴──────────┴──────────────────────────────────────┘
  */
 @RestController
@@ -36,21 +36,21 @@ public class AuthController {
      *
      * BODY esperado (JSON):
      * {
-     *   "username": "almacenero01",
-     *   "password": "mi_contraseña"
+     * "username": "almacenero01",
+     * "password": "mi_contraseña"
      * }
      *
      * RESPUESTA exitosa (200 OK):
      * {
-     *   "token": "eyJhbGciOiJIUzI1NiJ9...",
-     *   "username": "almacenero01",
-     *   "rol": "Almacenero",
-     *   "nombreCompleto": "Juan Quispe Flores"
+     * "token": "eyJhbGciOiJIUzI1NiJ9...",
+     * "username": "almacenero01",
+     * "rol": "Almacenero",
+     * "nombreCompleto": "Juan Quispe Flores"
      * }
      *
      * RESPUESTA fallida (401 Unauthorized):
      * {
-     *   "error": "Credenciales incorrectas"
+     * "error": "Credenciales incorrectas"
      * }
      */
     @PostMapping("/login")
